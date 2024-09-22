@@ -10,7 +10,7 @@ const conversationSchema=new mongoose.Schema(
         ],
         messages:[
             {
-                type: mongoose.Schema.Types.ObjectId,
+                type:mongoose.Schema.Types.ObjectId,
                 ref: "Message",
                 default: [],
             },
