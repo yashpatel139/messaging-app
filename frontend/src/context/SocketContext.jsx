@@ -15,7 +15,7 @@ export const SocketContextProvider = ({ children }) => {
 
 	useEffect(() => {
 		if (authUser) {
-			const socket = io("http://localhost:5000", { // backend url
+			const socket = io("https://messaging-app-0kao.onrender.com/", { // backend url
 				query: {
 					userId: authUser._id,
 				},
